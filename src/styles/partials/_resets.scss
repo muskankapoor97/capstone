@@ -1,0 +1,30 @@
+/* ---------------- PARTIAL IMPORTS ---------------- */
+@use "./colors" as *;
+
+/* CSS resets */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-dark;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
