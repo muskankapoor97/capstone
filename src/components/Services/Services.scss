@@ -1,0 +1,70 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/typography" as tp;
+@use "../../styles/partials/mixins" as mx;
+
+
+  
+
+.services{
+    background: url(../../assets/images/white-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #f1ecc2;
+    display: flex;
+    gap: 15rem;
+    &__left{
+        // background: url(../../assets/images/black-bg.svg);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        background-color: #171717;
+        width: 50%;
+        height: 100vh;
+        border-radius: 0rem 20rem 30rem 0rem;
+        padding: 8rem 10rem 8rem 5rem;
+        color: white;
+        position: relative;
+
+        &-image{
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            top: 33%;
+            left: 53%;
+        }
+        &-heading{
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+        &-content{
+            font-size: 1.1rem;
+            width: 19rem;
+        }
+    }
+    &__right-heading{
+        font-size: 3rem;
+    }
+
+
+}
+.right{
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__card{
+    height: 5rem;
+    width: 27rem;
+    background-color: rgb(164, 159, 159);
+    border-radius: 2rem;
+    padding: 2rem;
+
+    }
+    &__card:hover{
+        background-color: yellow;
+    }
+}

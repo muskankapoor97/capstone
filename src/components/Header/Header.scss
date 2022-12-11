@@ -1,0 +1,87 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/typography" as tp;
+@use "../../styles/partials/mixins" as mx;
+
+.header{
+    margin: 0;
+    
+        &__icons{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+        }
+        
+        &__icon{
+            color: white;
+            &--colorChange{
+                color: #171717;
+            }
+        }
+    
+}
+.navbar{
+    box-shadow: 8px 8px 10px grey;
+    position: fixed;
+    z-index: 9;
+    @include tp.header;
+    @include mx.padding;
+    display: flex;
+    justify-content: space-between;
+//    
+background-color: #171717;
+   position: fixed;
+  z-index: 9;
+    width: 100vw;
+    height: 6rem;
+    color: yellow;
+    &__colorChange{
+        background: url(../../assets/images/white-bg.svg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        color: #171717;
+        position: fixed;
+        z-index: 9;
+        @include tp.header;
+        @include mx.padding;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 6rem;
+    
+    }
+}
+
+
+
+.sidenav{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: 850ms;
+    width: 13rem;
+    z-index: 20;
+    height: 100vh;
+    background-color: white;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    &-item{
+        padding: 2rem;
+    }
+    }
+    &__iconContainer{
+        margin: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        
+     }
+}
+.sidenav.active{
+    right: 0;
+    transition: 450ms;
+}
