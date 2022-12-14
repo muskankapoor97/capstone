@@ -1,3 +1,79 @@
+.FirstName-Valid{
+  position: relative;
+   display: none;
+ 
+   &__text{
+  color: yellow;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ 
+ .LastName-Valid{
+  position: relative;
+   display: none;
+ 
+   &__text{
+  color: yellow;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ .MachineID-Valid{
+  position: relative;
+   display: none;
+ 
+   &__text{
+  color: yellow;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ .Email-Valid{
+  position: relative;
+   display: none;
+    &__text{
+  color: yellow;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ .UnitNumber-Valid{
+  position: relative;
+   display: none;
+
+   &__text{
+  color:yellow;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ .Date-Valid{
+  position: relative;
+   display: none;
+
+   &__text{
+  color: yellow;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ 
+
+
+
+
 .parking{
   margin: 0;
   background:url(../../assets/images/parking.jpg);
@@ -21,7 +97,7 @@
   padding: 2rem;
   background-color: #171717;
   width: 40rem;
-  height: 35rem;
+  height: 40rem;
   &__content{
     display: flex;
     flex-direction: column;
