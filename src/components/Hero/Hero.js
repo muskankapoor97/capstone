@@ -1,7 +1,7 @@
 import "./Hero.scss";
-import slideOne from "../../assets/images/slide-1.webp";
-import slideTwo from "../../assets/images/slide-2.webp";
-import slideThree from "../../assets/images/slide-3.webp";
+import slideOne from "../../assets/images/492.jpg";
+import slideTwo from "../../assets/images/slide-2.jpg";
+import slideThree from "../../assets/images/493.jpg";
 import {AiOutlineLine} from "react-icons/ai";
 import {BsArrowRight} from "react-icons/bs";
 import { useState } from "react";

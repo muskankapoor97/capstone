@@ -23,25 +23,23 @@
     
 }
 .navbar{
-    box-shadow: 8px 8px 10px grey;
+    box-shadow: 3px 3px 10px grey;
     position: fixed;
     z-index: 9;
     @include tp.header;
     @include mx.padding;
     display: flex;
     justify-content: space-between;
-//    
-background-color: #171717;
+    background-color: #171717;
+    color: white;
    position: fixed;
-  z-index: 9;
+    z-index: 9;
     width: 100vw;
     height: 6rem;
     color: yellow;
     &__colorChange{
-        background: url(../../assets/images/white-bg.svg);
-        background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        box-shadow: 3px 3px 10px black;
+        background-color: white;
         color: #171717;
         position: fixed;
         z-index: 9;

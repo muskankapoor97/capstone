@@ -10,7 +10,7 @@ const Header=()=>{
     
 
     const changeBgColor=()=>{
-        if(window.scrollY>=700){
+        if(window.scrollY>=600){
             setColorChange(true);
         }
         else{

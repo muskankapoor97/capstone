@@ -9,8 +9,8 @@ function Homepage() {
     <>
     <Header />
     <Hero />
-    <Services />
     <Activity />
+    <Services />
     </>
   );
 }
