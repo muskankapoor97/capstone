@@ -17,8 +17,10 @@ const Services=()=>{
             <div className="services__cards">
               <Link to="/parking">
             <div className="services__card"> Parking </div></Link>
-            <div className="services__card">Elevator</div>
-            <div className="services__card">Laundry </div>
+            <Link to="/elevator">
+            <div className="services__card">Elevator</div></Link>
+            <Link to="/laundry">
+            <div className="services__card">Laundry </div></Link>
             <div className="services__card">Rent</div>
             </div>
         </div>
