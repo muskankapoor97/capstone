@@ -1,6 +1,6 @@
 .laundry{
     margin: 0;
-    background:url(../../assets/images/elevator.jpg);
+    background:url(../../assets/images/laundry.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -12,7 +12,14 @@
       color: yellow;
       left: 42%;
     }
-    
+    &__overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(50, 50, 50, 0.70);
+      padding: 0;
+      margin: 0;
+  }
   }
   
   .form {

@@ -31,7 +31,7 @@ const Hero=()=>{
         setCurrentIndex(newImageIndex);
     };
     return (
-        <section className="hero">
+        <section className="hero" id="about">
             <div className="hero__content">
                 <h2 className="hero__heading">
                 Multiple units, one effective manager.</h2>

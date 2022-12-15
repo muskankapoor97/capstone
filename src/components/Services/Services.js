@@ -8,7 +8,7 @@ const Services=()=>{
     
 
     return (
-       <section className="services">
+       <section className="services" id="service">
         <div className="services__container">
             <div className="services__heading">SERVICES</div>
             <div className="services__cards">

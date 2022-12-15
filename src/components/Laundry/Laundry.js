@@ -109,8 +109,9 @@ export default function Laundry(){
   console.log(tenant);
     return(
       <section className="laundry">
+        <div className="laundry__overlay">
       <div className="laundry__title">
-        <p className="laundry__title-text">Book Parking</p>
+        <p className="laundry__title-text">Book Laundry</p>
       </div>
         <form className="form" noValidate onSubmit={handleSubmit}>
         {tenant?.map((person) => (
@@ -218,6 +219,7 @@ export default function Laundry(){
       </>
       ))}
     </form>
+    </div>
     </section>
     );
 }

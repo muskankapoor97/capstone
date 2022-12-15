@@ -1,9 +1,10 @@
 import "./Activity.scss";
 import {BsArrowRight} from "react-icons/bs";
+import { Link } from "react-router-dom";
 const Activity=()=>{
     return (
        
-       <section className="activity">
+       <section className="activity" id="activities">
          <div className="overlay">
         <div className="activity__heading">
             <h1 className="activity__heading--white">UPDATE</h1>
@@ -11,9 +12,10 @@ const Activity=()=>{
             
             </div>
             <div className="activity__content">
-                <p className="activity__para">No water suppy in the building today.No water suppy in the building today.No water suppy in the building today.</p>
-                
+                <p className="activity__para">Plumbing will be worked on: Wed, December18, 2022, 8:30am to 12:00pm approx. During this time there will be no water. Sorry for the inconvenience.</p>
+                <Link to ="/updates">
                 <BsArrowRight size={65} color="yellow" className="activity__heading-iconRight" />
+                </Link>
             </div>
             </div>
        </section>

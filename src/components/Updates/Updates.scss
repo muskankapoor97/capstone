@@ -1,0 +1,45 @@
+
+.updates{
+    background:url(../../assets/images/notice-board.jpg);
+    height: 100vh;
+    background-size:100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 5rem;
+    &__heading{
+        color: white;
+        font-size: 3rem;
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        
+        &--white{
+            font-size: 3rem;
+             margin: 0;
+            color: white;
+        }
+        &--yellow{
+            font-size: 3rem;
+            margin: 0;
+            color: yellow;
+        }
+    }
+}
+
+
+
+.notices{
+    display: flex;
+    justify-content: space-evenly;
+}
+.notice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    background-color: rgb(216, 209, 111);
+    padding: 1rem;
+    box-shadow: 3px 3px 10px black;
+}

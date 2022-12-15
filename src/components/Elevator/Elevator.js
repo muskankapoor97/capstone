@@ -74,7 +74,7 @@ export default function Elevator(){
     return(
       <section className="elevator">
       <div className="elevator__title">
-        <p className="elevator__title-text">Book Parking</p>
+        <p className="elevator__title-text">Book Elevator</p>
       </div>
         <form className="form" noValidate onSubmit={handleSubmit}>
         {tenant?.map((person) => (

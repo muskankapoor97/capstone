@@ -37,9 +37,9 @@ const Header=()=>{
              <RxCross2 size={35} color="black" className="sidenav__icon" onClick={showSidebar}/>
             </div>
             <ul className="sidenav__list">
-                <li className="sidenav__list-item">About</li>
-                <li className="sidenav__list-item">Activities</li>
-                <li className="sidenav__list-item">Services</li>
+                <li className="sidenav__list-item"><a href="./#about">About</a></li>
+                <li className="sidenav__list-item"><a href="./#activities">Activities</a></li>
+                <li className="sidenav__list-item"> <a href="./#service">Services</a></li>
                 <li className="sidenav__list-item">Contact Us</li>
                 </ul>
 
