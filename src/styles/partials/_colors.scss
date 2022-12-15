@@ -1,22 +1,18 @@
 /* ------------------------------- PRIMARY COLORS ------------------------------- */
 // Primary text color
-$primary-dark: #1e1e1e; // Black
-
-$primary-semi-light: #276afc; // Instock Indigo
-
+$primary-dark: #000000; // Black
 $primary-light: #ffffff; // Pure white
 
-/* ------------------------------- SECONDARY COLORS ------------------------------- */
-$secondary-dark: #5c667e; // Slate
 
-$secondary-light: #bdc5d5; // Cloud
+/* ------------------------------- SECONDARY COLORS ------------------------------- */
+$secondary-light: #ffff00; // Yellow
 
 /* ------------------------------- BACKGROUND COLORS ------------------------------- */
-$background-dark: #181b2a; // Graphite
-
-$background-light: #f7f8f9; // Light Grey
+$background-dark: #171717; 
+$background-light: #ffffff; 
 
 /* ------------------------------- SUPPORTING COLORS ------------------------------- */
-$supporting-light: #eee9fd; //  Light
+$supporting-light:  rgb(216, 209, 111); 
+$supporting-shadow:#808080;
 
-$supporting-semi-light: #7c3aed; // Purple
+

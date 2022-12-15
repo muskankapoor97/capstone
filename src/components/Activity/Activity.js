@@ -12,9 +12,9 @@ const Activity=()=>{
             
             </div>
             <div className="activity__content">
-                <p className="activity__para">Plumbing will be worked on: Wed, December18, 2022, 8:30am to 12:00pm approx. During this time there will be no water. Sorry for the inconvenience.</p>
+                <p className="activity__para">Plumbing will be worked on: Sun, December18, 2022, 8:30am to 12:00pm approx. During this time there will be no water. Sorry for the inconvenience.</p>
                 <Link to ="/updates">
-                <BsArrowRight size={65} color="yellow" className="activity__heading-iconRight" />
+                <BsArrowRight size={55} color="yellow" className="activity__heading-iconRight" />
                 </Link>
             </div>
             </div>

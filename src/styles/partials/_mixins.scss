@@ -2,17 +2,5 @@
 @use "./colors" as *;
 @use "./breakpoints" as bp;
 
-/* ------------- MIXIN FOR PADDING ------------- */
 
-@mixin padding {
-  transition: 0.3s ease;
-  @include bp.small {
-    padding: 0 1rem;
-  }
-  @include bp.medium {
-    padding: 0 3rem;
-  }
-  @include bp.large {
-    padding: 2rem 5rem;
-  }
-}
+

@@ -1,8 +1,8 @@
 /* --------------- PARTIAL IMPORTS --------------- */
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/breakpoints" as bp;
-@use "../../styles/partials/typography" as tp;
 @use "../../styles/partials/mixins" as mx;
+
 
 .header{
     margin: 0;
@@ -10,41 +10,48 @@
         &__icons{
             display: flex;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 1.5rem;
 
+        }
+        &__logo{
+            font-size: 1.3rem;
         }
         
         &__icon{
-            color: white;
+            color: $primary-light;
             &--colorChange{
-                color: #171717;
+                color: $background-dark;
             }
         }
     
 }
 .navbar{
-    box-shadow: 3px 3px 10px grey;
+    box-shadow: 3px 3px 10px #808080;
     position: fixed;
     z-index: 9;
-    @include tp.header;
-    @include mx.padding;
     display: flex;
+    font-size: 2.1875rem;
+    line-height: 2.5rem;
+    font-weight: 700;
     justify-content: space-between;
-    background-color: #171717;
-    color: white;
-   position: fixed;
+    background-color: $background-dark;
+    color: $primary-light;
+    position: fixed;
+    padding: 2rem 5rem;
     z-index: 9;
     width: 100vw;
     height: 6rem;
-    color: yellow;
+    color: $secondary-light;
     &__colorChange{
-        box-shadow: 3px 3px 10px black;
-        background-color: white;
-        color: #171717;
+        font-size: 2.1875rem;
+        line-height: 2.5rem;
+         font-weight: 700;
+         padding: 2rem 5rem;
+        box-shadow: 3px 3px 10px $primary-dark;
+        background-color: $background-light;
+        color: $primary-dark;
         position: fixed;
         z-index: 9;
-        @include tp.header;
-        @include mx.padding;
         display: flex;
         justify-content: space-between;
         width: 100vw;
@@ -63,7 +70,7 @@
     width: 13rem;
     z-index: 20;
     height: 100vh;
-    background-color: white;
+    background-color: $background-light;
     &__list{
         display: flex;
         flex-direction: column;

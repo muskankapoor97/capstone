@@ -1,0 +1,134 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+.FirstName-Valid{
+  position: relative;
+   display: none;
+ 
+   &__text{
+  color: $secondary-light;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ 
+ .LastName-Valid{
+  position: relative;
+   display: none;
+ 
+   &__text{
+  color: $secondary-light;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ .Message-Valid{
+  position: relative;
+   display: none;
+ 
+   &__text{
+  color: $secondary-light;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+ 
+ .Email-Valid{
+  position: relative;
+   display: none;
+    &__text{
+  color: $secondary-light;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-left: 0.2rem;
+   }
+ }
+.contact{
+    margin: 0;
+    background-color: $background-dark;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    background-repeat: no-repeat;
+    &__title{
+        text-align: center;
+        padding: 3rem;
+      font-size: 3rem;
+      margin: 0;
+      color: $secondary-light;
+      left: 42%;
+      font-weight:600;
+    }
+   &__Container{
+    display: flex;
+    border: 1px solid $primary-light;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    text-align: center;
+   }
+    &__info{
+        padding: 2rem;
+        background-color: $background-dark;
+
+    }
+    &__content{
+        
+        &-heading{
+            color: $secondary-light;
+        }
+        &-para{
+            color: $primary-light;
+        }
+    }
+    
+  }
+  
+  .form {
+    background-color: $background-dark;
+    
+    &__content{
+      display: flex;
+      flex-direction: column;
+    }
+    &__detail{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0.5rem;
+      &-timeContainer{
+        display: flex;
+        gap: 1rem;
+        
+      }
+    }
+    &__label{
+      color: $primary-light;
+      padding-bottom: 0.25rem;
+    }
+    &__input{
+      padding: 0.5rem;
+      height: 2.5rem;
+      &-time{
+        width: 11.3rem;
+      }
+      &-textarea{
+        padding: 0.5rem;
+        height: 8rem;
+      }
+    }
+    &__btn{
+      background-color: $secondary-light;
+      width: 100%;
+      height: 3rem;
+      font-weight:600;
+      margin-top: 1rem;
+    }
+  
+  }
+  

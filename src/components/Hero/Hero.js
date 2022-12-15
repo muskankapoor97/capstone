@@ -34,8 +34,8 @@ const Hero=()=>{
         <section className="hero" id="about">
             <div className="hero__content">
                 <h2 className="hero__heading">
-                Multiple units, one effective manager.</h2>
-                <p className="hero__paragraph">Properties can be complex and confusing. Our experienced strata property managers simplify all-things-strata, from managing the strata council’s finances to ensuring compliance with the Strata Property Act and strata corporation bylaws. More than 3,300 strata unit owners on Vancouver Island trust our services – you can too.</p>
+                Multiple units, one effective manager</h2>
+                <p className="hero__paragraph">Properties can be complex and confusing. Our experienced property managers simplify all-things, from managing the finances to ensuring easy access to the building services. More than 3,300 unit owners on Vancouver Island trust our services – you can too.</p>
                 <button className="hero__button">LEARN MORE</button>
             </div>
             <div className="hero__images">

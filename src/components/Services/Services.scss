@@ -1,7 +1,6 @@
 /* --------------- PARTIAL IMPORTS --------------- */
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/breakpoints" as bp;
-@use "../../styles/partials/typography" as tp;
 @use "../../styles/partials/mixins" as mx;
 
 
@@ -9,8 +8,8 @@
 
 .services{
     padding: 5rem;
-    background-color: #171717;
-    color: white;
+    background-color: $background-dark;
+    color: $primary-light;
     &__heading{
         font-size: 3rem;
         padding-bottom: 3rem;
@@ -25,7 +24,7 @@
         }
         &__card{
             font-size: 2rem;
-            color: white;
+            color: $primary-light;
             border-radius: 2rem;
             padding: 2rem;
         
@@ -37,7 +36,7 @@
 .services__card {
     height: 20vh;
     width: 15rem;
-    border: 5px solid yellow;
+    border: 5px solid $secondary-light;
     font-size: 2rem;
     cursor: pointer;
     display: flex;
@@ -51,7 +50,7 @@
   
   .services__card::before, .services__card::after {
     position: absolute;
-    background: #171717;
+    background: $background-dark;
     z-index: -1;
     transition: 1s;
     content: '';

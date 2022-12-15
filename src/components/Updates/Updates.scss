@@ -1,3 +1,6 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
 
 .updates{
     background:url(../../assets/images/notice-board.jpg);
@@ -7,22 +10,23 @@
     background-repeat: no-repeat;
     padding: 2rem 5rem;
     &__heading{
-        color: white;
+        color: $primary-light;
         font-size: 3rem;
         margin: 0;
         padding: 2rem;
         display: flex;
         justify-content: center;
+
         
         &--white{
             font-size: 3rem;
              margin: 0;
-            color: white;
+            color: $primary-light;
         }
         &--yellow{
             font-size: 3rem;
             margin: 0;
-            color: yellow;
+            color: $secondary-light;
         }
     }
 }
@@ -39,7 +43,10 @@
     align-items: center;
     justify-content: center;
     width: 20rem;
-    background-color: rgb(216, 209, 111);
+    background-color: $supporting-light;
     padding: 1rem;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px $primary-dark;
+        &__date{
+            font-weight:600;
+         }
 }

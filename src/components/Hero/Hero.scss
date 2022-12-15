@@ -1,20 +1,20 @@
 /* --------------- PARTIAL IMPORTS --------------- */
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/breakpoints" as bp;
-@use "../../styles/partials/typography" as tp;
 @use "../../styles/partials/mixins" as mx;
 
 .hero{
    
-    background-color: #171717;
+    background-color: $background-dark;
     padding: 9rem 5rem;
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    color: white;
+    color: $primary-light;
     height: 100vh;
     &__content{
         width: 45%;
+        padding-top: 2rem;
     }
     &__heading{
         font-size: 2rem;
@@ -23,13 +23,14 @@
     &__paragraph{
         padding-top: 1rem;
         padding-bottom: 2rem;
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
     &__button{
-        background-color: yellow;
+        background-color: $secondary-light;
+        font-weight:600;
         border: none;
-        color: #171717;
+        color: $primary-dark;
         height: 2rem;
         width: 10rem;
         border-radius: 0.625rem;
@@ -49,7 +50,7 @@
         width: 100%;
         height: 100%;
         border-radius: 1rem;
-        box-shadow: 0 10px 20px -5px black;
+        box-shadow: 0 10px 20px -5px $primary-dark;
         background-position: center;
         background-size: cover;
         position: relative;

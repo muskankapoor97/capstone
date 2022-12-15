@@ -1,9 +1,15 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+
+
 .status{
     margin: 0;
-    padding: 1rem 5rem;
-    height: 100vh;
-    background-color: #171717;
-    color: white;
+    padding: 0rem 5rem;
+    height: 100%;
+    background-color: $background-dark;
+    color: $primary-light;
 }
 
 .washers{
@@ -18,7 +24,7 @@
 
 }
 .washer{
-    border: 2px solid white;
+    border: 2px solid $primary-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +47,7 @@
         padding-left: 1rem;
     }
     &__book-button{
-        background-color: yellow;
+        background-color: $secondary-light;
             border: none;
             height: 2rem;
             width: 8rem;
@@ -49,7 +55,8 @@
             padding: 0.313rem;
     }
     &__book-buttonEnabled{
-            color: #171717;
+            color: $primary-dark;
+            font-weight:600;
     }
     &__book-buttonDisabled{
         color: gray;
@@ -61,13 +68,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 8rem;
     &__heading{
         font-size: 3rem;
     }
 
 }
 .dryer{
-    border: 2px solid white;
+    border: 2px solid $primary-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +98,7 @@
         padding-left: 1rem;
     }
     &__book-button{
-        background-color: yellow;
+        background-color: $secondary-light;
             border: none;
             height: 2rem;
             width: 8rem;
@@ -98,7 +106,8 @@
             padding: 0.313rem;
     }
     &__book-buttonEnabled{
-        color: #171717;
+        color: $primary-dark;
+        font-weight:600;
     }
     &__book-buttonDisabled{
     color: gray;
