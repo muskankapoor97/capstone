@@ -1,0 +1,92 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+
+.header{
+    margin: 0;
+    
+        &__icons{
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+
+        }
+        &__logo{
+            font-size: 1.3rem;
+        }
+        
+        &__icon{
+            color: $primary-light;
+            &--colorChange{
+                color: $background-dark;
+            }
+        }
+    
+}
+.navbar{
+    box-shadow: 3px 3px 10px #808080;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    font-size: 2.1875rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    justify-content: space-between;
+    background-color: $background-dark;
+    color: $primary-light;
+    position: fixed;
+    padding: 2rem 5rem;
+    z-index: 9;
+    width: 100vw;
+    height: 6rem;
+    color: $secondary-light;
+    &__colorChange{
+        font-size: 2.1875rem;
+        line-height: 2.5rem;
+         font-weight: 700;
+         padding: 2rem 5rem;
+        box-shadow: 3px 3px 10px $primary-dark;
+        background-color: $background-light;
+        color: $primary-dark;
+        position: fixed;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 6rem;
+    
+    }
+}
+
+
+
+.sidenav{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: 850ms;
+    width: 13rem;
+    z-index: 20;
+    height: 100vh;
+    background-color: $background-light;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    &-item{
+        padding: 2rem;
+    }
+    }
+    &__iconContainer{
+        margin: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        
+     }
+}
+.sidenav.active{
+    right: 0;
+    transition: 450ms;
+}

@@ -1,0 +1,22 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+.footer {
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 6.2rem;
+    justify-content: center;
+    background-color: $background-dark;
+    width: 100vw;
+    font-size: 0.6875rem;
+    color: $supporting-shadow;
+    font-weight: 400;
+  
+  
+    &-wrap {
+      display: flex;
+      justify-content: center;
+    }
+  }
