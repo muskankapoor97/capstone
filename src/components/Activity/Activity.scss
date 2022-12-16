@@ -1,0 +1,68 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+
+.activity{
+    background:url(../../assets/images/apartment-building-wall.jpg);
+    height: 100vh;
+    &__heading{
+        display: flex;
+        font-size: 3rem;
+        padding: 5rem 5rem 0 5rem;
+        
+        &--white{
+            font-size: 3rem;
+             margin: 0;
+            color: $primary-light;
+        }
+        &--yellow{
+            font-size: 3rem;
+            margin: 0;
+            color: $secondary-light;
+        }
+        &-iconRight{
+            position: absolute;
+            left: 20%;
+            top: 12%;
+        }
+    }
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.87);
+    padding: 0;
+    margin: 0;
+}
+.activity__para{
+  background-image: linear-gradient(
+    -225deg,
+    #b3ed2c 0%,
+    #23c0ec 29%,
+    #ff1361 67%,
+    #fff800 80%,
+    #fff800 100%
+  );
+  padding: 0 5rem;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+    font-size: 4rem;
+    
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+

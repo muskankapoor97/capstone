@@ -1,0 +1,81 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+
+  
+
+.services{
+    padding: 5rem;
+    background-color: $background-dark;
+    color: $primary-light;
+    &__heading{
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        margin: 0;
+        text-align: center;
+        
+        }
+        &__cards{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        &__card{
+            font-size: 2rem;
+            color: $primary-light;
+            border-radius: 2rem;
+            padding: 2rem;
+        
+        }
+        
+
+}
+
+.services__card {
+    height: 20vh;
+    width: 15rem;
+    border: 5px solid $secondary-light;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+  }
+  
+  .services__card::before, .services__card::after {
+    position: absolute;
+    background: $background-dark;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+  }
+  
+  .services__card::before {
+    height: 20vh;
+    width: 8rem;
+  }
+  
+  .services__card::after {
+    height: 20vh;
+    width: 8rem;
+    
+  }
+  
+  
+  .services__card:hover::before {
+    width: 0px;
+    
+  }
+  
+  .services__card:hover::after {
+    height: 0px;
+    
+  }
+  
+  

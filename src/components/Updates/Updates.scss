@@ -1,0 +1,52 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+.updates{
+    background:url(../../assets/images/notice-board.jpg);
+    height: 100vh;
+    background-size:100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 5rem;
+    &__heading{
+        color: $primary-light;
+        font-size: 3rem;
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+
+        
+        &--white{
+            font-size: 3rem;
+             margin: 0;
+            color: $primary-light;
+        }
+        &--yellow{
+            font-size: 3rem;
+            margin: 0;
+            color: $secondary-light;
+        }
+    }
+}
+
+
+
+.notices{
+    display: flex;
+    justify-content: space-evenly;
+}
+.notice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    background-color: $supporting-light;
+    padding: 1rem;
+    box-shadow: 3px 3px 10px $primary-dark;
+        &__date{
+            font-weight:600;
+         }
+}

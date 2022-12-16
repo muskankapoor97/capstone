@@ -1,0 +1,71 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/mixins" as mx;
+
+.elevator{
+    margin: 0;
+    background:url(../../assets/images/elevator.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    background-repeat: no-repeat;
+    &__title{
+      font-size: 3rem;
+      position: absolute;
+      color: $secondary-light;
+      left: 42%;
+      font-weight:600;
+    }
+    &__overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(50, 50, 50, 0.70);
+        padding: 0;
+        margin: 0;
+    }
+  }
+  
+  .form {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    padding: 2rem;
+    background-color: $background-dark;
+    width: 40rem;
+    height: 40rem;
+    &__content{
+      display: flex;
+      flex-direction: column;
+    }
+    &__detail{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0.5rem;
+      &-timeContainer{
+        display: flex;
+        gap: 1rem;
+        
+      }
+    }
+    &__label{
+      color: $primary-light;
+      padding-bottom: 0.25rem;
+    }
+    &__input{
+      padding: 0.5rem;
+      height: 2.5rem;
+      &-time{
+        width: 11.3rem;
+      }
+    }
+    &__btn{
+      background-color: $secondary-light;
+      width: 100%;
+      height: 3rem;
+      margin-top: 1rem;
+      font-weight:600;
+    }
+  
+  }
